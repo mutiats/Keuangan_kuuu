@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Finance Next-Level</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>💸 Futuristic Finance Dashboard</h1>
+  <div class="container">
+    <canvas id="particles"></canvas>
+    <div id="balance">Saldo: Rp0</div>
+    <form id="financeForm">
+      <input type="text" id="desc" placeholder="Keterangan" required>
+      <input type="number" id="amount" placeholder="Jumlah" required>
+      <select id="type" required>
+        <option value="">Tipe</option>
+        <option value="income">Pemasukan</option>
+        <option value="expense">Pengeluaran</option>
+      </select>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <div id="transactionList"></div>
+
+    <canvas id="chart" width="700" height="300"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
